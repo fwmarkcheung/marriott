@@ -118,6 +118,7 @@
             <id>openshift</id>
             <build>
                 <plugins>
+<!--
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
@@ -126,6 +127,8 @@
                             <warName>ROOT</warName>
                         </configuration>
                     </plugin>
+
+-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
