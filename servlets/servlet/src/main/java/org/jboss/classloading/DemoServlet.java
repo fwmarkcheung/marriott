@@ -26,6 +26,7 @@ public class DemoServlet extends HttpServlet {
 
     PrintWriter writer = response.getWriter();
     writer.append("You are running in the " + System.getProperty("env"));
+    writer.append("<br>");
     writer.append("Msg 1 = " + Util.getInstance().getMsg("msg1"));
 
   }
