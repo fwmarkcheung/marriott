@@ -27,7 +27,7 @@ public class DemoServlet extends HttpServlet {
     
 	PrintWriter writer = response.getWriter();
 	writer.append("<html><body>");
-    writer.append("You are running in the " + System.getProperty("env"));
+    writer.append("You are running in the " + System.getProperty("env") + " environment.");
     writer.append("<br>");
     writer.append("Msg 1 = " + Util.getInstance().getMsg("msg1"));
     writer.append("</body></html>");
