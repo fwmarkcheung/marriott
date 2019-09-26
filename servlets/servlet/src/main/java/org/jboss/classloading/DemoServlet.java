@@ -23,11 +23,14 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 	  log.info("Processing request");
     
-
-    PrintWriter writer = response.getWriter();
+	response.setContentType("text/html");
+    
+	PrintWriter writer = response.getWriter();
+	writer.append("<html><body>");
     writer.append("You are running in the " + System.getProperty("env"));
     writer.append("<br>");
     writer.append("Msg 1 = " + Util.getInstance().getMsg("msg1"));
+    writer.append("</body></html>");
 
   }
 }
