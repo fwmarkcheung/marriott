@@ -43,7 +43,9 @@
         <artifactId>maven-ear-plugin</artifactId>
         <configuration>
         
-        <!--  Need to configure explicitly to include the primary-source as a java module in the generated application.xml -->
+         <defaultLibBundleDir>lib</defaultLibBundleDir>
+         
+        <!--  Need to configure explicitly to include the primary-source as a java module in the generated application.xml 
         <modules>
             <jarModule>
              <groupId>org.jboss</groupId>
@@ -57,6 +59,7 @@
               <addClasspath>true</addClasspath>
             </manifest>
           </archive>
+          -->
         </configuration>
       </plugin>
     </plugins>
